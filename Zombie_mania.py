@@ -20,9 +20,9 @@ displaysurface = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Zombie mania")
 
 #Importing images
-PlayerImage = pygame.transform.scale((pygame.image.load("C:\\Users\\Rayan Kasam\\Documents\\MyCode\\Zombie Mania\\Player.png").convert_alpha()),((HEIGHT/7),(HEIGHT/7)))
-ZombieImage = pygame.transform.scale((pygame.image.load("C:\\Users\\Rayan Kasam\\Documents\\MyCode\\Zombie Mania\\Zombie.png").convert_alpha()),((HEIGHT/7),(HEIGHT/7))) 
-Background = pygame.image.load("C:\\Users\\Rayan Kasam\\Documents\\MyCode\\Zombie Mania\\Map_Backround.png").convert_alpha()
+PlayerImage = pygame.transform.scale((pygame.image.load("Zombie-Mania\\Player.png").convert_alpha()),((HEIGHT/7),(HEIGHT/7)))
+ZombieImage = pygame.transform.scale((pygame.image.load("Zombie-Mania\\Zombie.png").convert_alpha()),((HEIGHT/7),(HEIGHT/7))) 
+Background = pygame.image.load("Zombie-Mania\\Map_Backround.png").convert_alpha()
 all_sprites = pygame.sprite.Group()
 Zombies = pygame.sprite.Group()
 playerGroup = pygame.sprite.Group()
@@ -195,7 +195,7 @@ while LOOP:
         hsFont = pygame.font.SysFont("times new roman",20)
         text = font.render(str(("SCORE " + str(P1.score))),True, (255,255,255))
 
-        highScoreRead = int((open("Zombie Mania\Highscore.txt","r")).readline())
+        highScoreRead = int((open("Zombie-Mania\\Highscore.txt","r")).readline())
 
         newHighScore = False
         highScore = 0
